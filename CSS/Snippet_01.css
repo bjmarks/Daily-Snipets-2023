@@ -1,0 +1,81 @@
+body {
+    background-color: #002a3f;
+    padding: 0;
+    margin: 0;
+}
+input[type = "file"] {
+    display: none;
+}
+label {
+    color: #FFFFFF;
+    height: 60px;
+    width: 250px;
+    background-color: #f5af09;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-container {
+    margin-top: 10%;
+    margin-left: 70%;
+    width: 250px;
+    height: 450px;
+    background-color: transparent;
+    perspective: 1000px;
+}
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #232323;
+    box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.25);
+    border-radius: 26px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-in-out;
+}
+.front {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background: #232323;
+    box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.25);
+    border-radius: 26px;
+    padding: 40px;
+    transition: all 0.5s ease-in-out;
+}
+.back {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #232323;
+    box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.25);
+    border-radius: 26px;
+    padding: 40px;
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+    transform: rotateY(-180deg);
+}
+.front , .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;    
+}
+.card-container:hover .card {
+    transform: rotateY(-180deg);
+}
+
