@@ -1,0 +1,26 @@
+.box {
+    background-color: burlywood;
+    flex-grow: 1;
+    aspect-ratio: 1 / 1; /* square boxes */
+}
+.phone {
+    background-color: orchid;
+    flex-grow: 1;
+    aspect-ratio: 9 / 16; /* portrait rectangles */
+}
+.desktop {
+    background-color: firebrick;
+    flex-grow: 1;
+    aspect-ratio: 16 / 9; /* landscape rectangles */
+}
+.ultrawide {
+    background-color: saddlebrown;
+    flex-grow: 1;
+    aspect-ratio: 21 / 9; /* longer landscape rectangles */
+}
+.cont {
+    display: flex;
+    gap: .5rem;
+    width: 90%;
+    margin: auto;
+}
