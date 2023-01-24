@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snippet 24</title>
+    <link rel="stylesheet" href="../CSS/Snippet_24.css">
+</head>
+<body>
+    <div class="img-center">
+        <img id="avatar" alt="userLogo">
+    </div>
+        <br>
+    <div class="form-center">
+        <form>
+            <label for="shape">Choose Shape</label>
+            <br>
+            <select name="shape" id="shape">
+                <option value="Null">Blank</option>
+                <option value="Rect">Square</option>
+                <option value="Arc">Circle</option>
+                <option value="Corn">Rounded Box</option>
+            </select>
+            <br>
+            <label for="text">Inner Text</label>
+            <br>
+            <input type="text" name="text" id="text" pattern="[A-Za-z0-9]{1,2}" placeholder="Text">
+            <br>
+            <label for="foreground">Text Color</label>
+            <br>
+            <input type="color" name="foreground" id="foreground">
+            <br>
+            <label for="background">Background Color</label>
+            <input type="color" name="background" id="background" value="#f0f0f0">
+            <br>
+            <input type="button" value="Check" id="confirm">
+            <a id="download" download="AvatarMaker.png">Download</a>
+        </form>
+    </div>
+    <script src="../JAVASCRIPT/Snippet_24.js"></script>
+</body>
+</html>
