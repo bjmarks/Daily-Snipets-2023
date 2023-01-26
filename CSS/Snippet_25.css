@@ -1,0 +1,15 @@
+.pictures img {
+    width: 23%;
+    margin: auto;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+.pictures {
+    position: absolute;
+    bottom: 5px;
+    left: 35%;
+    right: 35%;
+    width: 30%;
+    background-color:cadetblue
+}
