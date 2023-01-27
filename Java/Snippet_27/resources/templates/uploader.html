@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snippet 27 uploader</title>
+</head>
+<body>
+<input type="file" id="fileupload" name="fileupload" />
+<button id="upload-button" onclick="uploadFile()">Upload</button>
+<script>
+    async function uploadFile() {
+        let formData = new FormData();
+        formData.append("file", fileupload.files[0]);
+        let response = await fetch("/upload", {
+            method: "POST",
+            body: formData
+        });
+        if(response.status === 200){
+            window.location.replace("http://localhost:8080/return");
+        }
+    }
+</script>
+</body>
+</html>
