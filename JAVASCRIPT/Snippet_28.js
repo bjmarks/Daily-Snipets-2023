@@ -1,0 +1,10 @@
+const array = ["one", "two", "three", "four"];
+console.log(array.join(", ")); 
+const us = new Intl.ListFormat("en-us");
+const sp = new Intl.ListFormat("es-sp");
+const jp = new Intl.ListFormat("ja-jp", {type: "disjunction",});
+const fn = new Intl.ListFormat("fr");
+console.log("US " + us.format(array));
+console.log("SP " + sp.format(array));
+console.log("JP " + jp.format(array));
+console.log("FR " + fn.format(array));
