@@ -1,0 +1,5 @@
+.magazine {
+    column-gap: 60px;
+    column-count: 3;
+    column-width: 200px;
+}
