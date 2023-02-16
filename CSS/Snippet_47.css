@@ -1,0 +1,16 @@
+div {
+    width: 51%;
+    margin: auto;
+}
+.font-stretch-half {
+    font-stretch: 50%;
+    width: 50%;
+}
+.font-stretch-full {
+    font-stretch: 100%;
+    width: 50%;
+}
+.font-stretch-double {
+    font-stretch: 200%;
+    width: 50%;
+}
