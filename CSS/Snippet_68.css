@@ -1,0 +1,28 @@
+.container {
+    background-color: black;
+    height: 600px;
+}
+.text-input {
+    width: 30%;
+    position: relative;
+    top: 10px;
+    left: calc(50% - 15%);
+    text-align: center;
+    font-size: larger;
+    background-color: white;
+}
+.keyboard {
+    display: flex;
+    margin: 10px auto 0px;
+    width: 95%;
+    height: 500px;
+    flex-wrap: wrap;
+}
+.keyboard > .keys {
+    flex: 18%;
+    margin: 10px;
+    background-color: blueviolet;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
