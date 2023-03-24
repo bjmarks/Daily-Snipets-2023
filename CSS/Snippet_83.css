@@ -1,0 +1,104 @@
+html {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 98%;
+}
+.pokemon {
+    border: 1px solid black;
+    display: block;
+    width: 70%;
+    height: 300px;
+    margin: 10px auto;
+}
+.poke-id {
+    position: relative;
+    left: 1%;
+    color: black;
+    font-size: 30px;
+    font: bold;
+}
+.poke-id::after {
+    content: ".";
+}
+.poke-img {
+    position: relative;
+    display: block;
+    top: -12%;
+    left: 0%;
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    border: 1px solid black;
+}
+.poke-name {
+    position: relative;
+    display: block;
+    top: -70%;
+    left: 22%;
+    text-transform: capitalize;
+    font-size: 36px;
+    font: bold;
+}
+.poke-type {
+    position: relative;
+    display: block;
+    top: -70%;
+    left: 22%;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.description {
+    position: relative;
+    display: block;
+    top: -28%;
+    left: 10px;
+    font-size: 24px;
+}
+.text-input {
+    width: 30%;
+    position: relative;
+    top: 10px;
+    left: calc(50% - 20%);
+    text-align: center;
+    font-size: larger;
+    background-color: white;
+}
+.text-submit {
+    width: 10%;
+    position: relative;
+    top: 10px;
+    left: calc(50% - 20%);
+    text-align: center;
+    font-size: larger;
+    background-color: white;
+}
+.arrow {
+    color: black;
+    background-color: lightslategray;
+    position: absolute;
+    top: 12%;
+    font-size: 84px;
+}
+.left-arrow {
+    left: 5%;
+}
+.right-arrow {
+    left: calc(95% - 42px);
+}
+.pokedex {
+    position: relative;
+    top: 20px;
+    left: 4%;
+    width: 98%;
+    display: block;
+    margin-bottom: 50px;
+}
+.dex {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid black;
+    width: 24%;
+    margin: 2px auto;
+}
