@@ -1,0 +1,17 @@
+button {
+    position: relative;
+}
+button::before {
+    content: attr(data-count);
+    position: absolute;
+    top: -0.75em;
+    right: -0.75em;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
