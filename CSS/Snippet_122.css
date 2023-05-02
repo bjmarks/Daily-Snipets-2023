@@ -1,0 +1,21 @@
+img {
+    width: 50%;
+}
+.container {
+    position: relative;
+    margin-left: 25%;
+}
+.container::before {
+    content: "Text that could render from javascript";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0, 0, 0.7);
+    color: bisque;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+.container:hover::before {
+    opacity: 1;
+    transition: opacity .2s ease;
+}
