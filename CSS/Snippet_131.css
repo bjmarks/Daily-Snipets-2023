@@ -1,0 +1,18 @@
+body {
+    background: black;
+}
+@media (width <= 1200px) { /* shows red when at 1200px or less  */
+    body {
+        background: red;
+    }
+}
+@media (300px <= width <= 800px) { /* shows green when between 300-800px  */
+    body {
+        background: green;
+    }
+}
+@media (300px <= width <= 800px) or (orientation: landscape) { /* shows green when between 300-800px or when in landscape veiw */
+    body {
+        background: blue;
+    }
+}
