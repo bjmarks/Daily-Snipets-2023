@@ -1,0 +1,16 @@
+.color a {
+    background-color: black;
+    color: red;
+}
+.color a:where(:hover, :focus, :active) { 
+    background-color: cadetblue;
+    color: blue;
+}
+img {
+    width: 300px;
+    height: 300px;
+}
+.img-container { /* resizeable div */
+    resize: both;
+    overflow: auto;
+}
