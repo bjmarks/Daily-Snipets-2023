@@ -1,0 +1,29 @@
+/* sometimes not enough*/
+/* .container_div li::marker { 
+    color: #222;
+    font-weight: 900;
+    font-size: .8em;
+} */
+.container_div {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: counter1;
+}
+.container_div li {
+    counter-increment: counter1;
+}
+.container_div li:before {
+    content: counter(counter1);
+    background: #222;
+    font-size: .8em;
+    color: #fff;
+    line-height: 1;
+    font-weight: 900;
+    display: inline-grid;
+    place-items: center;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 3px solid yellow;
+    border-radius: 50%;
+}
