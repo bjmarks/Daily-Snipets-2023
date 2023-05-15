@@ -1,0 +1,9 @@
+html {
+    scroll-behavior: smooth; /* for smooth scrolling */
+    scroll-padding: var(--scroll-padding , 5rem); /* for it to have padding dynamicly via js with a fallback of 5rem */
+}
+/*
+const navigation = document.querySelector(".primary-navigation");
+const navigationHeight = navigation.offsetHeight;
+document.documentElement.style.setProperty("--scroll-padding", navigationHeight + "px"); 
+*/
