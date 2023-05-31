@@ -1,0 +1,31 @@
+.box {
+    margin: 1em;
+    width: 8em;
+    height: 8em;
+    aspect-ratio: 1;
+}
+.copper {
+    background: linear-gradient(90deg, #844414 0%, #fcd5be 25%, #cf7d52 50%, #fcd5be 75%, #844414 100%);
+}
+.coppere {
+    background: linear-gradient(90deg, #844414 0%, #cf7d52 25%, #fcd5be 50%, #cf7d52 75%, #844414 100%);
+}
+.silver {
+    background: linear-gradient(90deg, #7e7e7e 0%, #e3e3e3 25%, #787878 50%, #e3e3e3 75%, #7e7e7e 100%);
+}
+.silvere {
+    background: linear-gradient(90deg, #787878 0%, #b5b5b5 25%, #e3e3e3, 50%, #b5b5b5 75%, #787878 100%);
+}
+.gold {
+    background: linear-gradient(90deg, #bf9a47 0%, #ffe233 25%, #c7801d 50%, #ffe233 75%, #bf9a47 100%);
+}
+.golde {
+    background: linear-gradient(90deg, #844414 0%, #c7801d 25%, #ffe233 50%, #c7801d 75%, #844414 100%);
+}
+.diamond {
+    background: linear-gradient(90deg, #b8d8e7 0%, #9ac5db 25%, #cbe3f0 50%, #9ac5db 75%, #b8d8e7 100%);
+}
+.diamonde {
+    background: linear-gradient(90deg, #b9f2ff 0%, #cbe3f0 25%, #9ac5db 50%, #cbe3f0 75%, #b9f2ff 100%);   
+}
+/* elemental Gradients for upcoming project */
