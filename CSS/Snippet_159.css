@@ -1,0 +1,35 @@
+.page_404 {
+    padding: 0;
+    background: #fff;
+    font-family: "Arvo", serif;
+    text-align: center;
+}
+.four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    width: 50%;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -50px;
+}
+h1 {
+    font-size: 80px;
+}
+.link_404 {
+    color: #fff!important;
+    padding: 5px 10px;
+    background: #39ac31;
+    margin: 0;
+    display: inline-block;
+    text-decoration: none;
+}
+.contant_box_404 {
+    margin-top: -110px;
+}
+.contant_box_404 h3 {
+    font-size: 80px;
+}
+.contant_box_404 p {
+    font-size: 40px;
+}
