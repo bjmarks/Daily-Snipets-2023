@@ -1,0 +1,5 @@
+x = bytes(5)
+y = memoryview(x)
+print(x)
+print(y)
+print(type(y))
