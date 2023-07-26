@@ -7,7 +7,7 @@ public class bcrypt {
     private String hashed = BCrypt.hashpw(password, BCrypt.gensalt(10));
     public void checkPass(String password) {
         if(BCrypt.checkpw(password, hashed)) {
-            System.out.println("tight");
+            System.out.println("right");
         }
         else {
             System.out.println("wrong");
