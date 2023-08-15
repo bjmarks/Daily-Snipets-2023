@@ -1,0 +1,36 @@
+@property --a {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+img {
+  --r: 50px;
+  width: calc(var(--r)*(1 + 1/tan(180deg/15)));
+  aspect-ratio: 1;
+  border-radius: 50%;
+  --a: 0deg;
+  mask: radial-gradient(#000 calc(72% - var(--r)/2), #0000 0), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.0666666667 + var(--a))) calc(50% + 50%*sin(360deg*0.0666666667 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.1333333333 + var(--a))) calc(50% + 50%*sin(360deg*0.1333333333 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.2 + var(--a))) calc(50% + 50%*sin(360deg*0.2 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.2666666667 + var(--a))) calc(50% + 50%*sin(360deg*0.2666666667 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.3333333333 + var(--a))) calc(50% + 50%*sin(360deg*0.3333333333 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.4 + var(--a))) calc(50% + 50%*sin(360deg*0.4 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.4666666667 + var(--a))) calc(50% + 50%*sin(360deg*0.4666666667 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.5333333333 + var(--a))) calc(50% + 50%*sin(360deg*0.5333333333 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.6 + var(--a))) calc(50% + 50%*sin(360deg*0.6 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.6666666667 + var(--a))) calc(50% + 50%*sin(360deg*0.6666666667 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.7333333333 + var(--a))) calc(50% + 50%*sin(360deg*0.7333333333 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.8 + var(--a))) calc(50% + 50%*sin(360deg*0.8 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.8666666667 + var(--a))) calc(50% + 50%*sin(360deg*0.8666666667 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*0.9333333333 + var(--a))) calc(50% + 50%*sin(360deg*0.9333333333 + var(--a)))/ var(--i, var(--r) var(--r)), radial-gradient(#000 70%, #0000 72%) no-repeat calc(50% + 50%*cos(360deg*1 + var(--a))) calc(50% + 50%*sin(360deg*1 + var(--a)))/ var(--i, var(--r) var(--r));
+  --_a: rotate linear infinite;
+  animation: var(--_a) 10s, var(--_a) 16s reverse paused;
+  animation-composition: add;
+  cursor: pointer;
+  transition: 0.3s;
+}
+img:hover {
+  animation-play-state: running;
+  --i: calc(1.5*var(--r)) calc(1.5*var(--r));
+}
+@keyframes rotate {
+  to {
+    --a: 360deg;
+  }
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  grid-auto-flow: column;
+  gap: 50px;
+  background: #E08E79;
+}
