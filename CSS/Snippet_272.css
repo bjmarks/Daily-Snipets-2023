@@ -1,0 +1,17 @@
+#div {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    transition: width 2s;
+}
+#div>p { 
+    width: 35px;
+    padding: 5px;
+    position: relative;
+    top: 35%;
+    left: calc(50% - 25px);
+    background-color: firebrick;
+}
+#div:hover {
+    width: 400px;
+}
