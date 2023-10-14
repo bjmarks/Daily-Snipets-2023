@@ -1,0 +1,13 @@
+/* video by: https://youtu.be/uV8kH5RgSZU?si=0ON4VR3Y_-lgEqOv */
+.container {
+    scroll-snap-type:  y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
